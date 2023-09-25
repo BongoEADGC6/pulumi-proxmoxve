@@ -92,6 +92,8 @@ func Provider() tfbridge.ProviderInfo {
 			"proxmox_virtual_environment_firewall_ipset":                  {Tok: tfbridge.MakeResource(mainPkg, networkMod, "FirewallIPSet")},
 			"proxmox_virtual_environment_firewall_options":                {Tok: tfbridge.MakeResource(mainPkg, networkMod, "FirewallOptions")},
 			"proxmox_virtual_environment_firewall_rules":                  {Tok: tfbridge.MakeResource(mainPkg, networkMod, "FirewallRules")},
+			"proxmox_virtual_environment_network_linux_vlan":              {Tok: tfbridge.MakeResource(mainPkg, networkMod, "LinuxVlan")},
+			"proxmox_virtual_environment_network_linux_bridge":            {Tok: tfbridge.MakeResource(mainPkg, networkMod, "LinuxBridge")},
 		},
 		DataSources: map[string]*tfbridge.DataSourceInfo{
 			// Cluster
